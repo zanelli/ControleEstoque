@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ControleEstoque</name>
+    </assembly>
+    <members>
+        <member name="M:ControleEstoque.Controllers.ProdutoController.Get(ControleEstoque.Data.DataContext)">
+            <summary>
+            Recupera todos os produtos cadastrados com seu saldo atual
+            </summary>
+            <returns>Retorna uma lista de produtos</returns>
+        </member>
+        <member name="M:ControleEstoque.Controllers.ProdutoController.Get(System.Int32)">
+            <summary>
+            Retorna um produto pelo seu ID
+            </summary>
+            <param name="id">Id do produto</param>
+            <returns>O produto com seu saldo atual</returns>
+        </member>
+        <member name="M:ControleEstoque.Controllers.ProdutoController.Post(ControleEstoque.Models.Produto)">
+            <summary>
+            Cadastra um novo produto com seu saldo inicial
+            </summary>
+            <param name="produto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControleEstoque.Controllers.ProdutoController.Put(ControleEstoque.Models.Produto,System.Int32)">
+            <summary>
+            Edita a descrição e o estoque atual de um produto
+            </summary>
+            <param name="produto"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControleEstoque.Controllers.ProdutoController.Delete(System.Int32)">
+            <summary>
+            Exclui um produto
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControleEstoque.Controllers.ProdutoController.MovimentaEstoque(ControleEstoque.Models.AtualizaEstoqueViewModel,System.Int32)">
+            <summary>
+            Movimenta o estoque de um produto
+            </summary>
+            <param name="produto"></param>
+            <param name="id">Id do produto</param>
+            <returns></returns>
+        </member>
+        <member name="P:ControleEstoque.Models.AtualizaEstoqueViewModel.Estoque">
+            <summary>
+            Informa o estoque atual do produto
+            </summary>
+        </member>
+        <member name="P:ControleEstoque.Models.Produto.Id">
+            <summary>
+            Id do produto - gerado automaticamente
+            </summary>
+        </member>
+        <member name="P:ControleEstoque.Models.Produto.Descricao">
+            <summary>
+            Descrição do produto, deve ter mais de 3 caracteres
+            </summary>
+        </member>
+        <member name="P:ControleEstoque.Models.Produto.Estoque">
+            <summary>
+            Saldo do estoque atual do produto
+            </summary>
+        </member>
+    </members>
+</doc>
